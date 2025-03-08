@@ -1,0 +1,151 @@
+.experienceContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.experienceCard {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(203, 203, 203, 0.2);
+    border-radius: 10px;
+}
+
+.experienceCard .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.card-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.experienceCard .cardDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+}
+
+.cardDiv:last-child {
+    border-bottom: none;
+}
+
+.cardDiv .card-role {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cardDiv .card-roleInfo {
+    display: grid;
+    text-align: end;
+}
+
+.card-roleInfo h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card-roleInfo p {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+@media (max-width: 1024px) {
+    .experienceContainer {
+        padding: 20px 10px;
+    }
+
+    .experienceCard {
+        width: 90%;
+    }
+
+    .card-header h1 {
+        font-size: 1.8rem; 
+    }
+
+    .cardDiv {
+        padding: 12px 0;
+    }
+
+    .cardDiv .card-role {
+        font-size: 1.1rem; 
+    }
+
+    .cardDiv .card-roleInfo h3 {
+        font-size: 1rem;
+    }
+
+    .card-roleInfo p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experienceContainer {
+        padding: 10px;
+    }
+
+    .experienceCard {
+        width: 100%;
+    }
+
+    .card-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .cardDiv {
+        align-items: flex-start;
+        padding: 12px 0;
+    }
+
+    .cardDiv .card-role {
+        font-size: 1rem; 
+    }
+
+    .cardDiv .card-roleInfo {
+        text-align: left;
+    }
+
+    .card-roleInfo p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experienceContainer {
+        padding: 10px 5px;
+    }
+
+    .experienceCard {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .card-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .cardDiv .card-role {
+        font-size: 1rem;
+    }
+
+    .cardDiv .card-roleInfo h3 {
+        font-size: 0.95rem;
+    }
+
+    .card-roleInfo p {
+        font-size: 0.75rem;
+    }
+}

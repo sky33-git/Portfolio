@@ -1,0 +1,29 @@
+.faq{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.faq .faqContainer{
+    height: 98%;
+    width: 80%;
+    display: grid;
+}
+
+.faqContainer .faqHeader{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+
+.faqContainer .faqBody h2{
+    padding-bottom: 10px;
+
+}
+
+.faqBody p{
+    color: rgb(95, 93, 93);
+}

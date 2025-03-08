@@ -1,0 +1,146 @@
+.navbar {
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar .navbar-logo {
+    height: 90%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: auto;
+    width: 100px; 
+    cursor: pointer;
+}
+
+.navbar .navbar-menu {
+    height: 90%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-menu ul li {
+    margin: 20px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.navbar ul .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 64px;
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    padding: 1px 20px;
+}
+
+.navbar .navbar-hireme {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-hireme .hiremeContainer {
+    height: 30px;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar .navbar-menu {
+        display: none; 
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .navbar-menu.active {
+        display: block;
+        margin-left: 35%;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-menu ul li {
+        margin: 10px 0;
+        font-size: large;
+    }
+
+    .navbar .navbar-logo {
+        width: 50%; 
+    }
+
+    .navbar-hireme .hiremeContainer {
+        width: 100px;
+        margin-right: 150px;
+    }
+
+    .navbar-toggle {
+        display: flex; 
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .navbar-logo img {
+        width: 80px;
+    }
+
+    .navbar-menu ul li {
+        font-size: medium;
+    }
+
+    .navbar-hireme .hiremeContainer {
+        width: 90px;
+    }
+}

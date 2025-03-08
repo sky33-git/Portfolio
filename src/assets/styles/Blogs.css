@@ -1,0 +1,234 @@
+.blog {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.blog .blogContainer {
+    width: 80%;
+}
+
+.blogContainer .blogHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.blogContainer .blogHeader h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.blogContainer .blogHeader div {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.blogContainer .blogCard {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.blogCard .blogImg {
+    height: auto;
+    width: 25%;
+    min-width: 120px;
+    margin-right: 15px;
+}
+
+.blogImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blogCard .blogInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    max-width: 400px;
+}
+
+.blogInfo p {
+    font-size: 0.9rem;
+    color: gray;
+    margin: 5px 0;
+}
+
+.blogInfo h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.blogInfo-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.blogInfo button {
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.readBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.readBlog button {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.blogCard button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .blogContainer .blogCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogCard .blogImg {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    .blogCard .blogInfo {
+        width: 80%;
+        text-align: center;
+    }
+
+    .blogInfo h2 {
+        font-size: 1.1rem;
+    }
+
+    .blogInfo-button {
+        justify-content: center;
+    }
+
+    .blogCard .readBlog button {
+        width: 100%;
+        text-align: center;
+    }
+    .readBlog {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blogContainer {
+        width: 90%;
+    }
+
+    .blogContainer .blogHeader h1 {
+        font-size: 1.5rem;
+    }
+
+    .blogContainer .blogCard {
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .blogCard .blogImg {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .blogCard .blogInfo {
+        width: 80%;
+        text-align: center;
+    }
+
+    .blogInfo h2 {
+        font-size: 1.2rem;
+    }
+
+    .blogInfo p {
+        font-size: 0.85rem;
+    }
+
+    .blogInfo-button {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .blogCard .readBlog button {
+        width: 100%;
+        text-align: center;
+    }
+    .readBlog {
+        padding-top: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .blogContainer {
+        width: 100%;
+    }
+
+    .blogContainer .blogHeader h1 {
+        font-size: 1.4rem;
+    }
+
+    .blogContainer .blogCard {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .blogCard .blogImg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .blogCard .blogInfo {
+        width: 90%;
+    }
+
+    .blogInfo h2 {
+        font-size: 1.1rem;
+    }
+
+    .blogInfo p {
+        font-size: 0.8rem;
+    }
+
+    .blogInfo-button {
+        justify-content: center;
+    }
+
+    .blogCard .readBlog button {
+        width: 100%;
+    }
+    .readBlog {
+        padding-top: 20px;
+    }
+}
